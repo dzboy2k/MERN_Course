@@ -59,3 +59,34 @@ CTRL + J: Open In Terminal
 ```
   npm install dotenv
 ```
+
+## 5 - Create First API Call & Parsing Json Data 
+```
+POSTMAN
+  GET http://localhost:3000/api/v1/products
+  POST http://localhost:3000/api/v1/products
+    Body - raw - JSON:
+    {
+      "id": 1,
+      "name": "hair dresses",
+      "image": "some_url"
+    }
+
+npm install body-parser
+```
+
+## 6 - Logging API Requests
+```
+npm install morgan
+npm install mongoose
+
+https://cloud.mongodb.com/
+  Database Access => Add New Database User
+    shop-user
+    1234567Rr
+  Connect => Connect your application
+  Browse Collections => Add My Own Data:
+    Database name: eshop-database
+    Collection name: eshop-database
+    => Create
+``` 
