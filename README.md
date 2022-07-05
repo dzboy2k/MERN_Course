@@ -87,6 +87,19 @@ https://cloud.mongodb.com/
   Connect => Connect your application
   Browse Collections => Add My Own Data:
     Database name: eshop-database
-    Collection name: eshop-database
+    Collection name: products
     => Create
 ``` 
+
+## 7 - Read/Write Data to Database Using API
+```
+mongoose schema
+
+http://localhost:3000/api/v1/products POST
+  {
+    "id": 1,
+    "name": "hair dresses 2",
+    "image": "some_url",
+    "countInStock": 500
+  }
+```
