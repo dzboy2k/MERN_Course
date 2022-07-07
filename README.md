@@ -103,3 +103,5 @@ http://localhost:3000/api/v1/products POST
     "countInStock": 500
   }
 ```
+
+## 8 - Create Backend API Routes & Schemas
