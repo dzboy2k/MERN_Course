@@ -105,3 +105,33 @@ http://localhost:3000/api/v1/products POST
 ```
 
 ## 8 - Create Backend API Routes & Schemas
+
+## 9 - Enabling CORS & Why Do We Need It?
+```
+npm install cors
+```
+
+## 10 - Product, Categories Model & Schema
+
+## 11 - Add and Delete Categories
+```
+http://localhost:3000/api/v1/categories POST
+{
+  "name": "health",
+  "icon": "icon-health",
+  "color": "#050505"
+}
+{
+  "name": "computers",
+  "icon": "icon-computer",
+  "color": "#444"
+}
+{
+  "name": "computers11",
+  "icon": "icon-computer",
+  "color": "#444"
+}
+
+http://localhost:3000/api/v1/categories/62c783080bd6bf2640131574 DELETE
+http://localhost:3000/api/v1/categories GET
+```
