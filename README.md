@@ -167,7 +167,9 @@ http://localhost:3000/api/v1/categories/62c832ba6adb0c3d617e8db5 PUT
   "color": "#555"
 }
 ```
+
 ## 14 - Post a New Product REST API
+```
 http://localhost:3000/api/v1/products POST
 {
   "name": "product 1",
@@ -182,6 +184,40 @@ http://localhost:3000/api/v1/products POST
   "numReviews": 22,
   "isFeatured": true
 }
+```
 
 ## 15 - Get a Product & List of Products REST API
 
+## 16 - Show Category details in the Product - Populate
+```
+http://localhost:3000/api/v1/products/62c8ede420b142ab5c93dd59 GET
+```
+
+## 17 - Update a Product REST API
+```
+http://localhost:3000/api/v1/products/62c8ede420b142ab5c93dd59 PUT
+{
+  "name": "product 1 new",
+  "description": "product 1 description new",
+  "richDescription": "product 1 richDescription",
+  "image": "product1/image.jpg",
+  "brand": "product 1 brand",
+  "price": 37,
+  "category": "62c832e16adb0c3d617e8db7",
+  "countInStock": 10,
+  "rating": 4,
+  "numReviews": 22,
+  "isFeatured": true
+}
+```
+
+## 18 - Delete a Product REST API and Validate Id
+
+## 19 - Get Featured Products REST API
+
+## 20 - Filtering and Getting Products by Category
+```
+http://localhost:3000/api/v1/products?categories=62c832e16adb0c3d617e8db7,62c832ba6adb0c3d617e8db5
+```
+
+## 21 - Changing "_id" key to "id" - more frontend friendly
