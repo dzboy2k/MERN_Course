@@ -135,3 +135,53 @@ http://localhost:3000/api/v1/categories POST
 http://localhost:3000/api/v1/categories/62c783080bd6bf2640131574 DELETE
 http://localhost:3000/api/v1/categories GET
 ```
+
+## 12 - Get Categories and Category Details
+```
+http://localhost:3000/api/v1/categories POST
+{
+  "name": "computers11",
+  "icon": "icon-computer",
+  "color": "#444"
+}
+{
+  "name": "health",
+  "icon": "icon-health",
+  "color": "#444"
+}
+http://localhost:3000/api/v1/categories GET
+http://localhost:3000/api/v1/categories/62c832e16adb0c3d617e8db7 GET
+```
+
+## 13 - Update Category
+```
+http://localhost:3000/api/v1/categories/62c832ba6adb0c3d617e8db5 PUT
+{
+  "name": "Electronics",
+  "icon": "icon-electronics",
+  "color": "#555"
+}
+{
+  "name": "beuty",
+  "icon": "icon-beuty",
+  "color": "#555"
+}
+```
+## 14 - Post a New Product REST API
+http://localhost:3000/api/v1/products POST
+{
+  "name": "product 1",
+  "description": "product 1 description",
+  "richDescription": "product 1 richDescription",
+  "image": "product1/image.jpg",
+  "brand": "product 1 brand",
+  "price": 25,
+  "category": "62c832e16adb0c3d617e8db7",
+  "countInStock": 10,
+  "rating": 4,
+  "numReviews": 22,
+  "isFeatured": true
+}
+
+## 15 - Get a Product & List of Products REST API
+
