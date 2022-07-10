@@ -343,3 +343,33 @@ http://localhost:3000/api/v1/products POST
 ```
 
 ### 11 - Get User Count REST API
+
+## 5 - Backend: Orders
+
+### 1 - Orders & Order-Items Model & Scheme
+
+### 2 - Array of Refs - Example of Link Order to Order Items to Products
+
+### 3 - New Order & Create Order Items on Posting New Order
+```
+http://localhost:3000/api/v1/orders POST
+{
+  "orderItems" : [
+    {
+      "quantity": 3,
+      "product": "62c8ede420b142ab5c93dd59"
+    },
+    {
+      "quantity": 2,
+      "product": "62ca4447df8767674d5436a3"
+    }
+  ],
+  "shippingAddress1": "Flowers Street , 45", 
+  "shippingAddress2": "1-B",
+  "city": "Prague",
+  "zip": "00000",
+  "country": "Czech Republic",
+  "phone": "+420702241333",
+  "user": "62c98dd6831862990199465d"
+}
+```
