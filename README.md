@@ -441,3 +441,18 @@ MIME types
 ### 4 - Product Gallery Multiple Images Upload
 
 ### 5 - Excluding Uploads Folder From Authentication
+
+## 7 - React Native Fundamentals
+
+### 1 - Setup and Structure
+```
+expo init --npm
+todo-list
+blank
+cd todo-list
+code .
+```
+
+### 2 - Components
+
+### 3 - State
