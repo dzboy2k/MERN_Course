@@ -410,3 +410,34 @@ http://localhost:3000/api/v1/orders/62ca818756906fbc005c2095 POST
 ### 7 - Calculating Total Price of one Order
 
 ### 8 - Get Total E-Shop Sales using $sum
+
+## 6 - Backend: Images Upload
+
+### 1 - Configure Server Side Upload
+```
+npm i multer
+```
+
+### 2 - Testing Image Upload with Postman
+```
+name : Product6
+description : Product6 description
+richDescription : Product6 richDescription
+image : ImgW.jpeg
+brand : Product6 Brand
+price : 26
+category : 62c832e16adb0c3d617e8db7
+countInStock : 36
+rating : 2
+numReviews : 21
+isFeatured : true
+```
+
+### 3 - Validating Uploaded File Types
+```
+MIME types
+```
+
+### 4 - Product Gallery Multiple Images Upload
+
+### 5 - Excluding Uploads Folder From Authentication
