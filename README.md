@@ -324,3 +324,22 @@ Authorization => Bearer Token
 ```
 
 ### 7 - Authentication Error Handling
+
+### 8 - Excluding REST API Routes From Authentication
+```
+regex test => https://regex101.com/
+  Regular Expression: /\/api\/v1\/products(.*)/
+  Test String: /api/v1/products/get/featured/4
+``` 
+
+### 9 - Add More Secret User Information to Token 
+```
+https://jwt.io/ => Encoded
+```
+
+### 10 - Admins & Users - User Role
+```
+http://localhost:3000/api/v1/products POST
+```
+
+### 11 - Get User Count REST API
