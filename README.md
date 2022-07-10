@@ -373,3 +373,40 @@ http://localhost:3000/api/v1/orders POST
   "user": "62c98dd6831862990199465d"
 }
 ```
+
+### 4 - Get Order Detail and Populate Products in Order Items and User Data
+```
+{
+  "orderItems" : [
+    {
+      "quantity": 3,
+      "product": "62c8ede420b142ab5c93dd59"
+    },
+    {
+      "quantity": 2,
+      "product": "62ca4447df8767674d5436a3"
+    }
+  ],
+  "shippingAddress1": "Flowers Street , 45", 
+  "shippingAddress2": "1-B",
+  "city": "Prague",
+  "zip": "00000",
+  "country": "Usa",
+  "phone": "+421234567",
+  "user": "62c98dd6831862990199465d"
+}
+```
+
+### 5 - Update Order Status & Delete it
+```
+http://localhost:3000/api/v1/orders/62ca818756906fbc005c2095 POST
+{
+  "status": "shipped" 
+}
+```
+
+### 6 - Solution
+
+### 7 - Calculating Total Price of one Order
+
+### 8 - Get Total E-Shop Sales using $sum
