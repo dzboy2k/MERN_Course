@@ -1,10 +1,15 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Button, StyleSheet, Text, View} from 'react-native';
 
 const Todo = props => {
   return (
     <View style={[{margin: 8, padding: 8}, styles.item]}>
-      <Text>{props.name}</Text>
+      <Text>{props.item}</Text>
+      <Button
+        title={'Delete'}
+        color={'red'}
+        onPress={() => props.delete(props.item)}
+      />
     </View>
   );
 };
@@ -12,7 +17,7 @@ const Todo = props => {
 const styles = StyleSheet.create({
   item: {
     flexDirection: 'row',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center',
     borderColor: 'grey',
     borderWidth: 1,
